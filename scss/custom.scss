@@ -1,9 +1,41 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+$font-family-base: "Roboto", "Bodoni";
+  $font-size-base: 1rem;
+  $line-height-base: 1.6; 
+
+    $h1-font-size: 4.002rem;
+    $h2-font-size: 3.176rem;
+    $h3-font-size: 2.52rem;
+    $h4-font-size: 2rem;
+    $h5-font-size: 1.588rem;
+    $h6-font-size: 1.26rem;
+
+$primary:       #F26322;
+$secondary:     #3753A4;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         #fff;
+$dark:          #000;
+
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
+.card {
+   padding: 0;
+   flex: auto;
+}
+
+.row {
+   gap: 1rem;
+   --bs-gutter-x: 0;
+   flex-wrap: nowrap;
+}
