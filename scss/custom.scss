@@ -32,6 +32,8 @@ $dark:          #000;
 .card {
    padding: 0;
    flex: auto;
+   border: none;
+   outline: none;
 }
 
 .row {
@@ -42,4 +44,12 @@ $dark:          #000;
 
 .logo-img {
    width: 100px;
+}
+
+p {
+   font-family: Bodoni, serif;
+}
+
+.max-width-300 {
+   max-width: 300px;
 }
